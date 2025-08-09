@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuxurraCars — Louez votre voiture sans effort (Lyon)</title>
+  <meta name="description" content="Louez votre voiture sans effort à Lyon : LuxurraCars gère les annonces, la remise des clés, l'assurance partenaire et le nettoyage. Vous encaissez, nous prenons une commission par location.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark; }
+    .card { @apply rounded-2xl border border-white/10 bg-white/5 shadow; }
+    .btn { @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-medium transition; }
+    .btn-primary { @apply bg-yellow-500 text-black hover:bg-yellow-400; }
+    .btn-outline { @apply border border-white/20 hover:bg-white/10; }
+    .input, .textarea { @apply w-full rounded-xl bg-white/5 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500; }
+    .section { @apply max-w-6xl mx-auto px-4; }
+    .muted { @apply text-slate-300 text-sm; }
+  </style>
+  <script defer type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "LocalBusiness", "name": "LuxurraCars", "address": {"@type": "PostalAddress", "addressLocality": "Lyon", "addressRegion": "Auvergne-Rh\u00f4ne-Alpes", "addressCountry": "FR"}, "areaServed": ["Lyon", "Grand Lyon", "Auvergne-Rh\u00f4ne-Alpes"], "telephone": "+33 0 00 00 00 00", "url": "https://luxurracars.example"}
+  </script>
+</head>
+<body class="bg-gradient-to-b from-black to-slate-900 text-slate-100 min-h-screen">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-black/40 border-b border-white/10">
+    <div class="section py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-semibold tracking-wide">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 8l5-5 5 5" stroke-width="2"/><path d="M7 8v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V8" stroke-width="2"/></svg>
+        <span>LuxurraCars</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#fonctionnement" class="hover:text-white">Fonctionnement</a>
+        <a href="#simulateur" class="hover:text-white">Gains</a>
+        <a href="#tarifs" class="hover:text-white">Tarifs</a>
+        <a href="#eligibilite" class="hover:text-white">Éligibilité</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary rounded-2xl">Proposer mon véhicule</a>
+    </div>
+  </header>
+
+  <!-- Hero (propriétaires) -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-30" aria-hidden="true">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="section py-18 md:py-22 grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <div class="inline-flex items-center gap-2 text-xs text-slate-300 border border-white/10 rounded-full px-3 py-1 w-fit">
+          <span>📍 Lyon & alentours</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Mettez votre voiture au travail</h1>
+        <p class="text-lg text-slate-300">Nous louons votre voiture pour vous. Vous encaissez des revenus supplémentaires, nous gérons tout : annonces, contrats, remise des clés, nettoyage et support 7j/7.</p>
+        <div class="flex gap-3">
+          <a href="#contact" class="btn btn-primary rounded-2xl">Proposer mon véhicule</a>
+          <a href="#fonctionnement" class="btn btn-outline rounded-2xl">Comment ça marche</a>
+        </div>
+        <ul class="grid grid-cols-2 gap-3 text-sm text-slate-200">
+          <li>💼 Gestion complète</li>
+          <li>🛡️ Assurance partenaire*</li>
+          <li>🔐 Sélection locataires</li>
+          <li>💳 Paiements sécurisés</li>
+        </ul>
+        <p class="muted">* Selon conditions & contrat — détails en bas de page.</p>
+      </div>
+      <div class="relative">
+        <div class="card overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop" alt="Supercar prête à louer" class="w-full h-80 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fonctionnement -->
+  <section id="fonctionnement" class="section py-16 md:py-20">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-6"><h3 class="text-xl font-semibold mb-1">1) Évaluation & contrat</h3><p class="text-slate-300">On vérifie l’éligibilité du véhicule, on définit les règles d’usage, kilométrage & franchise, puis on signe un mandat de gestion.</p></div>
+      <div class="card p-6"><h3 class="text-xl font-semibold mb-1">2) Mise en marché</h3><p class="text-slate-300">Photos pro, annonce premium, diffusion multi‑plateformes, tarification dynamique selon la demande locale.</p></div>
+      <div class="card p-6"><h3 class="text-xl font-semibold mb-1">3) Location & suivi</h3><p class="text-slate-300">Sélection des profils, caution, état des lieux, remise/retour, nettoyage. Reporting mensuel et virement de vos gains.</p></div>
+    </div>
+  </section>
+
+  <!-- Simulateur simple -->
+  <section id="simulateur" class="section py-16 md:py-20">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold">Estimez vos gains</h2>
+      <p class="muted mt-2">Exemple : 8 jours loués / mois × 180 € / jour = 1 440 € CA. Commission à partir de 20% / location. Vous encaissez le reste.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 items-stretch">
+      <div class="card p-6 space-y-3">
+        <label class="block text-sm text-slate-300">Prix/jour (euros)</label>
+        <input id="p" type="number" value="180" class="input" oninput="calc()" />
+        <label class="block text-sm text-slate-300">Jours loués/mois</label>
+        <input id="d" type="number" value="8" class="input" oninput="calc()" />
+        <label class="block text-sm text-slate-300">Commission (%)</label>
+        <input id="c" type="number" value="20" class="input" oninput="calc()" />
+        <div class="mt-4 card p-4">
+          <div id="result" class="text-xl font-semibold">Revenu propriétaire estimé : 1 152 € / mois</div>
+          <div id="detail" class="muted mt-1">Après commission de 20% sur 1 440 € de chiffre d’affaires.</div>
+        </div>
+        <p class="muted">Estimation indicative, hors carburant/usure. Contrat prioritaire.</p>
+      </div>
+      <div class="card overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop" alt="Sportive jaune à Lyon" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarifs / modèle économique -->
+  <section id="tarifs" class="section py-16 md:py-20">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold">Modèle économique simple</h2>
+      <p class="muted mt-2">Commission à partir de 20% / location. Pas de frais d’entrée. Options sur demande (shooting, nettoyage approfondi, livraison).</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-6"><h3 class="font-semibold mb-1">Gestion complète</h3><p class="muted">Annonces, sélection, état des lieux, remise/retour, support 7j/7.</p></div>
+      <div class="card p-6"><h3 class="font-semibold mb-1">Options à la carte</h3><p class="muted">Shooting pro, detailing, livraison/collecte, stockage sécurisé.</p></div>
+      <div class="card p-6"><h3 class="font-semibold mb-1">Reporting transparent</h3><p class="muted">Tableau des locations, virements mensuels, justificatifs.</p></div>
+    </div>
+  </section>
+
+  <!-- Assurance & éligibilité -->
+  <section id="eligibilite" class="section py-16 md:py-20">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Assurance & conditions</h2>
+        <ul class="mt-6 space-y-3 muted">
+          <li>• Assurance partenaires dédiée à la location courte durée (à confirmer selon profil & véhicule).</li>
+          <li>• Dépôt de garantie/caution + vérification d’identité et permis.</li>
+          <li>• Traçabilité des kilomètres, politique carburant & franchise définies au contrat.</li>
+          <li>• Entretien à jour et état irréprochable requis.</li>
+        </ul>
+        <p class="muted mt-4">Note : La disponibilité d’assurance peut varier ; l’accord final figure dans le mandat et/ou police d’assurance.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Véhicules éligibles (exemples)</h3>
+        <ul class="mt-4 space-y-2 muted">
+          <li>• Sportives & GT (Porsche, Ferrari, Lamborghini, Aston Martin…)</li>
+          <li>• Berlines premium & SUV haute performance</li>
+          <li>• Véhicules récents & très bon état</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis -->
+  <section id="avis" class="section py-16 md:py-20">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold">Ils témoignent</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card p-6">
+        <div class="text-yellow-400">★★★★★</div>
+        <p class="text-slate-200 mt-3">“Ma 911 était louée 6 jours le premier mois. Process nickel, zéro prise de tête.”</p>
+        <div class="mt-4 font-semibold text-slate-100">Propriétaire — C. Durand</div>
+      </div>
+      <div class="card p-6">
+        <div class="text-yellow-400">★★★★★</div>
+        <p class="text-slate-200 mt-3">“Remise pro, check-in sérieux, voiture rendue impeccable.”</p>
+        <div class="mt-4 font-semibold text-slate-100">Locataire — A. Rossi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section py-16 md:py-20">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Proposer mon véhicule</h2>
+        <p class="muted mt-3">Envoyez-nous les infos clés. Réponse sous 24h.</p>
+        <div class="mt-6 space-y-3 muted">
+          <div>📍 Lyon, France</div>
+          <div>📞 +33 0 00 00 00 00</div>
+          <div>✉️ contact@luxurracars.fr</div>
+        </div>
+      </div>
+      <div class="card p-6 space-y-4">
+        <div class="grid md:grid-cols-2 gap-3">
+          <input class="input" placeholder="Votre nom">
+          <input class="input" type="email" placeholder="E‑mail">
+        </div>
+        <input class="input" placeholder="Téléphone">
+        <input class="input" placeholder="Modèle / année du véhicule">
+        <textarea class="textarea" placeholder="Kilométrage, valeur, jours supplémentaires dispos, remarques" rows="6"></textarea>
+        <button class="btn btn-primary rounded-2xl">Envoyer</button>
+        <p class="muted">Formulaire démo — connexion e‑mail/CRM possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 md:hidden">
+    <a href="#contact" class="btn btn-primary rounded-full shadow-lg px-6 py-3">Proposer mon véhicule</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10">
+    <div class="section flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-300">
+      <div>© <span id="year"></span> LuxurraCars</div>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:underline">Mentions légales</a>
+        <a href="#" class="hover:underline">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function calc() {
+      const p = parseFloat(document.getElementById('p').value || 0);
+      const d = parseFloat(document.getElementById('d').value || 0);
+      const c = parseFloat(document.getElementById('c').value || 0);
+      const ca = p * d;
+      const commission = ca * (c/100);
+      const revenu = ca - commission;
+      document.getElementById('result').textContent = "Revenu propriétaire estimé : " + Math.round(revenu).toLocaleString('fr-FR') + " € / mois";
+      document.getElementById('detail').textContent = "Après commission de " + c + "% sur " + Math.round(ca).toLocaleString('fr-FR') + " € de chiffre d’affaires.";
+    }
+    calc();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
